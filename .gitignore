@@ -1,5 +1,5 @@
 .gitignore
 ~*
 *.docx
-GIT_Tutorial
-Tutorials and General Info
+.DS_Store
+
