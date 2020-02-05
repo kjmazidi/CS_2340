@@ -1,4 +1,4 @@
-# days_v1.asm
+# days_v2.asm
 # Karen Mazidi
 # Program to output number of days for a given month
 #  program does not handle leap years
