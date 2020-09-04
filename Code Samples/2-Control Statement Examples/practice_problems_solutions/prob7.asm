@@ -17,10 +17,10 @@ exit:	li	$v0, 10
 copy:
 	add	$t1, $a1, $0	# $t1 = s1[]
 	add	$t2, $a2, $0	# $t2 = s2[]
-	lbu	$t5, ($t1)	# $t5 = s1[i]
+loop:	lbu	$t5, ($t1)	# $t5 = s1[i]
 	sb	$t5, ($t2)	# s2[i] = $t5
 	beq	$t5, $zero, return
 	addi	$t1, $t1, 1
 	addi	$t2, $t2, 1	# i++
-	j	copy
+	j	loop
 return:jr	$ra	
